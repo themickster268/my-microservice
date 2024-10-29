@@ -5,9 +5,7 @@ on:
 
 jobs:
     greeting:
-        runs-on: ubuntu-latest
-        steps:
-            - name: Call Reusable Workflow
-              uses: themickster268/my-reusable-workflows/.github/workflows/called.yml@main
-              with:
-                actor: Michael Donnelly
+        name: Call Reusable Workflow
+        uses: themickster268/my-reusable-workflows/.github/workflows/called.yml@main
+        with:
+            actor: Michael Donnelly
